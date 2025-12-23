@@ -1,4 +1,4 @@
-// src/components/StatsStrip.jsx
+import React from "react";
 function StatsStrip() {
   return (
     <section className="stats-strip">

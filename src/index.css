@@ -1,4 +1,7 @@
-/* ===== Root & Global ===== */
+@import "tailwindcss/preflight";
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities";
+
 :root {
   --primary: #ff6a00;
   --primary-dark: #e05500;
