@@ -1,40 +1,36 @@
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "./components/Navbar.jsx";  // Fix casing
 import Hero from "./components/Hero.jsx";
 import StatsStrip from "./components/StatsStrip.jsx";
 import ServicesSection from "./components/ServicesSection.jsx";
 import IndustriesSection from "./components/IndustriesSection.jsx";
-import AboutSection from "./components/AboutSection.jsx";
+import AboutSection from "./components/About.jsx";
 import TestimonialSlider from "./components/TestimonialSlider.jsx";
 import ContactForm from "./components/ContactForm.jsx";
-import Footer from "./components/Footer.jsx";   // if file is Footer.jsx
-
+import Footer from "./components/Footer.jsx";
+import { Routes, Route } from 'react-router-dom';
+import CompanyProfile from './components/CompanyProfile.jsx';
 
 function App() {
   return (
     <>
       <Navbar />
-      <main>
-        <Hero />
-        <StatsStrip />
-        <ServicesSection />
-        <IndustriesSection />
-        <AboutSection />
-        <TestimonialSlider />
-        <ContactForm />
-      </main>
+      <Routes>  {/* ← OUTSIDE main + ADD / route */}
+        <Route path="/" element={
+          <>
+            <Hero />
+            <StatsStrip />
+            <ServicesSection />
+            <IndustriesSection />
+            <AboutSection />
+            <TestimonialSlider />
+            <ContactForm />
+          </>
+        } />
+        <Route path="/company-profile" element={<CompanyProfile/>} />
+      </Routes>
       <Footer />
     </>
   );
 }
-function Tailwind() {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-emerald-700">
-      <h1 className="text-3xl font-bold text-white">
-        Tailwind + Vite is working!
-      </h1>
-    </div>
-  );
-}
-
 
 export default App;

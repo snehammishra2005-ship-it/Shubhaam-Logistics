@@ -1,108 +1,107 @@
 // src/components/Footer.jsx
-import React from "react";
-
 function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#283244] text-white pt-16 pb-6 text-sm">
-      {/* top footer */}
-      <div className="max-w-6xl mx-auto px-4 grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)_minmax(0,1.2fr)_minmax(0,1.6fr)]">
-        {/* Brand + text */}
-        <div>
-          {/* replace with your logo */}
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-md mb-6">
-            <span className="text-2xl font-semibold text-orange-500">SML</span>
-          </div>
-          <p className="text-gray-300 leading-relaxed">
-            Your trusted partner for freight forwarding, custom clearance, and
-            logistics solutions with 17+ years of excellence.
-          </p>
-          <div className="flex gap-4 mt-6 text-xl text-gray-300">
-            <i className="ri-facebook-line"></i>
-            <i className="ri-linkedin-line"></i>
-            <i className="ri-instagram-line"></i>
-            <i className="ri-youtube-line"></i>
-          </div>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h4 className="font-semibold mb-4">Quick Links</h4>
-          <ul className="space-y-2 text-gray-300">
-            <li className="flex items-center gap-2">
-              <span className="h-px w-4 bg-orange-500" /> Home
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="h-px w-4 bg-orange-500" /> About
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="h-px w-4 bg-orange-500" /> Services
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="h-px w-4 bg-orange-500" /> Contact
-            </li>
-          </ul>
-        </div>
-
-        {/* Our Services */}
-        <div>
-          <h4 className="font-semibold mb-4">Our Services</h4>
-          <ul className="space-y-2 text-gray-300">
-            <li className="flex items-center gap-2">
-              <span className="h-px w-4 bg-orange-500" /> Air Freight
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="h-px w-4 bg-orange-500" /> Sea Freight
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="h-px w-4 bg-orange-500" /> Custom Clearance
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="h-px w-4 bg-orange-500" /> Warehousing
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="h-px w-4 bg-orange-500" /> Transportation
-            </li>
-          </ul>
-        </div>
-
-        {/* Contact Us */}
-        <div>
-          <h4 className="font-semibold mb-4">Contact Us</h4>
-
-          <div className="mb-5">
-            <p className="font-semibold mb-2">Main Office – Mumbai</p>
-            <ul className="space-y-1 text-gray-300">
-              <li>302 Sitaram Apt, Swadeshi Mill Road, Sion Chunabhatti</li>
-              <li>Mumbai - 400022</li>
-              <li>Office: +91 9820036594</li>
-              <li>Mobile: +91 9819391592</li>
-              <li>Email: lmpcs1.shubhaamlogistics@gmail.com</li>
-            </ul>
+    <footer className="bg-gradient-to-b from-slate-900 via-slate-900/95 to-slate-950 text-white/90 pt-12 sm:pt-16 md:pt-20 pb-8 sm:pb-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
+          
+          {/* Brand */}
+          <div className="col-span-1 md:col-span-2 lg:col-span-1">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-orange-500 to-orange-400 rounded-2xl flex items-center justify-center mb-6 sm:mb-8 shadow-2xl shadow-orange-500/25">
+              <span className="text-xl sm:text-2xl lg:text-3xl font-black text-white drop-shadow-lg">SML</span>
+            </div>
+            <p className="text-xs sm:text-sm lg:text-base text-slate-300 leading-relaxed mb-6 sm:mb-8 max-w-sm">
+              Your trusted partner for freight forwarding, custom clearance, and 
+              logistics solutions with 17+ years of excellence.
+            </p>
+            <div className="flex gap-3 sm:gap-4 text-xl sm:text-2xl">
+              <a href="#" className="group p-2 rounded-xl bg-white/10 hover:bg-white/20 transition-all duration-300 hover:rotate-[-5deg] hover:scale-110">
+                <span>📘</span>
+              </a>
+              <a href="#" className="group p-2 rounded-xl bg-white/10 hover:bg-white/20 transition-all duration-300 hover:rotate-[5deg] hover:scale-110">
+                <span>💼</span>
+              </a>
+              <a href="#" className="group p-2 rounded-xl bg-white/10 hover:bg-white/20 transition-all duration-300 hover:rotate-[-8deg] hover:scale-110">
+                <span>📷</span>
+              </a>
+              <a href="#" className="group p-2 rounded-xl bg-white/10 hover:bg-white/20 transition-all duration-300 hover:rotate-[8deg] hover:scale-110">
+                <span>🎥</span>
+              </a>
+            </div>
           </div>
 
+          {/* Quick Links */}
           <div>
-            <p className="font-semibold mb-2">Port Operations – JNPT</p>
-            <ul className="space-y-1 text-gray-300">
-              <li>Jawaharlal Nehru Port Trust, Air Cargo Complex</li>
-              <li>Mobile: +91 9820036594</li>
-              <li>Email: lmpcs1.shubhaamlogistics@gmail.com</li>
+            <h4 className="text-sm sm:text-base lg:text-lg font-bold mb-4 sm:mb-6 text-white tracking-wide">Quick Links</h4>
+            <ul className="space-y-2 sm:space-y-3">
+              {[
+                'Home', 'About', 'Services', 'Company Profile', 'Contact'
+              ].map((item) => (
+                <li key={item} className="group">
+                  <a href={`#${item.toLowerCase().replace(' ', '-')}`} 
+                     className="text-xs sm:text-sm text-slate-300 hover:text-white hover:translate-x-2 flex items-center gap-2 group-hover:text-orange-400 transition-all duration-300">
+                    <span className="w-1.5 h-1.5 bg-gradient-to-r from-orange-400 to-orange-500 rounded-full scale-0 group-hover:scale-100 transition-transform origin-left mr-2"></span>
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
-        </div>
-      </div>
 
-      {/* bottom strip */}
-      <div className="border-t border-[#384359] mt-10 pt-4">
-        <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3 text-gray-300 text-xs">
-          <p>© {year} Shubhaam Logistics Services. All rights reserved.</p>
-          <p>
-            Operating 24/7, 365 days a year |{" "}
-            <span className="text-orange-500 font-semibold">
-              17+ Years of Experience
-            </span>
-          </p>
+          {/* Services */}
+          <div>
+            <h4 className="text-sm sm:text-base lg:text-lg font-bold mb-4 sm:mb-6 text-white tracking-wide">Our Services</h4>
+            <ul className="space-y-2 sm:space-y-3">
+              {[
+                'Air Freight', 'Sea Freight', 'Land Transport', 
+                'Custom Clearance', 'Warehousing', 'Cargo Insurance'
+              ].map((service) => (
+                <li key={service} className="group">
+                  <a href="#" 
+                     className="text-xs sm:text-sm text-slate-300 hover:text-white hover:translate-x-2 flex items-center gap-2 group-hover:text-orange-400 transition-all duration-300">
+                    <span className="w-1.5 h-1.5 bg-gradient-to-r from-orange-400 to-orange-500 rounded-full scale-0 group-hover:scale-100 transition-transform origin-left mr-2"></span>
+                    {service}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div className="lg:col-span-1">
+            <h4 className="text-sm sm:text-base lg:text-lg font-bold mb-4 sm:mb-6 text-white tracking-wide">Contact Us</h4>
+            
+            {/* Main Office */}
+            <div className="mb-6 sm:mb-8">
+              <p className="font-semibold text-xs sm:text-sm mb-3 text-orange-400">Main Office – Mumbai</p>
+              <div className="space-y-1 text-xs sm:text-sm text-slate-300">
+                <p>302 Sitaram Apt, Swadeshi Mill Road</p>
+                <p>Sion Chunabhatti, Mumbai - 400022</p>
+                <p className="font-mono text-orange-400">+91 9820036594</p>
+                <p className="font-mono text-orange-400">+91 9819391592</p>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div>
+              <p className="font-mono text-xs sm:text-sm text-slate-300 mb-1 truncate">
+                info@shubhaamlogistics.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Strip */}
+        <div className="border-t border-slate-800/50 mt-12 pt-6 sm:pt-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-400">
+            <p>© {year} Shubhaam Logistics Services. All rights reserved.</p>
+            <div className="flex items-center gap-4 text-orange-400 font-semibold text-xs sm:text-sm">
+              <span>🕐 Operating 24/7</span>
+              <span>⭐ 17+ Years Experience</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

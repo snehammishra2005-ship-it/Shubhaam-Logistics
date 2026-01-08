@@ -6,28 +6,28 @@ const services = [
     desc: "Fast and reliable air cargo services with global reach and express delivery options for time‑sensitive shipments.",
     bullets: ["Express Delivery", "Global Network", "Real‑time Tracking"],
     image:
-      "https://shubhaamlogistics.com/wp-content/uploads/2021/06/air-freight-1.jpg",
+      "/air-freight-1.jpg",
   },
   {
     title: "Sea Freight",
     desc: "Cost‑effective ocean freight solutions for bulk cargo and container shipments with worldwide coverage.",
     bullets: ["LCL & FCL", "Port‑to‑Port", "Door‑to‑Door"],
     image:
-      "https://shubhaamlogistics.com/wp-content/uploads/2021/06/sea-freight-1.jpg",
+      "/ocean.png",
   },
   {
     title: "Land Transport",
     desc: "Comprehensive ground transportation services including trucking and rail freight for domestic and cross‑border delivery.",
     bullets: ["Door Delivery", "Interstate", "Last Mile"],
     image:
-      "https://shubhaamlogistics.com/wp-content/uploads/2021/06/land-transport-1.jpg",
+      "/land.jpg",
   },
   {
     title: "Cargo Handling",
     desc: "Professional cargo handling and specialized equipment for safe transportation of all types of goods.",
     bullets: ["Safe Handling", "Special Equipment", "Documentation"],
     image:
-      "https://shubhaamlogistics.com/wp-content/uploads/2021/06/cargo-handling-1.jpg",
+      "/cargo.png",
   },
   {
     title: "Import & Export Perishable Goods",
@@ -38,7 +38,7 @@ const services = [
       "Compliance & Certifications",
     ],
     image:
-      "https://shubhaamlogistics.com/wp-content/uploads/2021/06/perishable-goods-1.jpg",
+      "/fruit.jpg",
   },
 ];
 
