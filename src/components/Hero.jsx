@@ -104,12 +104,23 @@ function Hero() {
                 className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none"
               />
 
-              <select className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none">
-                <option>Select a service</option>
-                <option>Air Freight</option>
-                <option>Sea Freight</option>
-                <option>Custom Clearance</option>
-              </select>
+              <select
+  className="
+    w-full px-4 py-3 rounded-lg
+    bg-white/10 text-white
+    border border-white/20
+    focus:outline-none
+    appearance-none
+  "
+>
+  <option value="" disabled selected className="text-gray-800">
+    Select a service
+  </option>
+  <option className="text-gray-800">Air Freight</option>
+  <option className="text-gray-800">Sea Freight</option>
+  <option className="text-gray-800">Custom Clearance</option>
+</select>
+
 
               <textarea
                 rows="3"
